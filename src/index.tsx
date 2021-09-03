@@ -1,5 +1,18 @@
-import * as React from "react";
-import { render } from 'react-dom';
+import * as React from "react"
+import { render } from 'react-dom'
+import styled, { createGlobalStyle } from "styled-components"
+import { Editor } from "./pages/editor";
 
-const Main = (<h1>Markdown Editor</h1>)
+const GlobalStyle = createGlobalStyle`
+  body * {
+      box-sizing: border-box;
+  }
+`
+
+const Main = (
+    <>
+        <GlobalStyle />
+        <Editor />
+    </>
+)
 render(Main, document.getElementById('app'))
