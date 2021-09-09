@@ -1,0 +1,1 @@
+(()=>{const e=self;e.addEventListener("message",(s=>{console.log("worker Received:",s.data),e.postMessage({result:s.data})}))})();
