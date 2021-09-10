@@ -16,12 +16,11 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
-        publicPath: 'dist/',
+        filename: 'index.js'
     },
     devServer: {
         static: {
-            directory: path.join(__dirname, './'),
+            directory: path.join(__dirname, './dist'),
         },
 
         hot: true,
